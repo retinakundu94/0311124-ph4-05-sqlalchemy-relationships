@@ -68,6 +68,9 @@ def patch_game(id):
 def delete_game(id):
     game = VideoGame.query.filter(VideoGame.id == id).first()
     if game:
+        game_reviews = game.reviews
+        for review in game_reviews:
+            db.session.delete(review)
         db.session.delete(game)
         db.session.commit()
         return {'message': 'Game deleted'}, 202
