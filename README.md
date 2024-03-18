@@ -1,9 +1,13 @@
 # Flask SQLAlchemy Relationships
 
-Learning goals:
+## Learning goals:
 
-- Build RESTful CRUD for a new model
+- Create a one to many relationship using `db.relationship` and `db.ForeignKey`
 
-- Create a one to many relationship between two models
+- Create a many to many relationship using `association_proxy`
 
-- Create a many to many relationship between three models
+## Getting Started
+
+Fork / clone the repository and run `pipenv install` followed by `pipenv shell`. From there `cd server`.
+
+To test your code you can use `flask shell`.
