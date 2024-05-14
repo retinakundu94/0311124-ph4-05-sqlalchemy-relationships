@@ -9,11 +9,33 @@ metadata = MetaData(naming_convention={
 
 db = SQLAlchemy(metadata=metadata)
 
+# BUILD OUT THE FOLLOWING MODELS
+
+# YOU WILL NEED ADDITIONAL COLUMNS FOR THE FOREIGN KEYS
+
+
+# VideoGame #########
+# id        integer #
+# name     string  #
+#####################
+
 class VideoGame():
     pass
 
-class Review():
-    pass
+
+# Publication #######
+# id        integer #
+# name      string  #
+#####################
 
 class Publication():
+    pass
+
+
+# Rating ############
+# id        integer #
+# rating    integer  #
+#####################
+
+class Review():
     pass
