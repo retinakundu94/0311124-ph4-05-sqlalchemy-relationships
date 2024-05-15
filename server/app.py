@@ -115,7 +115,7 @@ def review_by_id(id):
 def post_review():
     rev = Review(
         rating=request.json.get('rating'),
-        video_game_id=request.json.get('video_game_id'),
+        videogame_id=request.json.get('videogame_id'),
         publication_id=request.json.get('publication_id')
     )
     db.session.add(rev)
