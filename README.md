@@ -10,4 +10,4 @@
 
 Fork / clone the repository and run `pipenv install` followed by `pipenv shell`. From there `cd server`.
 
-To test your code you can use `flask shell` or use the prebuilt routes in Postman.
+To test your code you can use `flask shell` or use the prebuilt routes with Postman.
